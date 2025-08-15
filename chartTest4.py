@@ -46,7 +46,7 @@ def makeGChart(tipo, height = 150):
         st.altair_chart(chart, use_container_width=True)
 
 # Carrega os dados do arquivo CSV e converte para o formato de mapa
-theTable = loadData('dados/Indicadores_MAC.csv')  # the book is on the table
+theTable = loadData('Indicadores_MAC.csv')  # the book is on the table
 
 # Configuração da página do Streamlit
 st.set_page_config(page_title = "Indicadores MAC - UNICAMP ", layout = 'wide')
@@ -80,3 +80,4 @@ with col:
     makeChart(col, 'Todos', tipo, 360, True)
     makeGChart(tipo, 360)
         
+
