@@ -207,7 +207,7 @@ def getProdData(table, hospitalList, typeList, teto=False):
 # Exemplo de uso e teste deste módulo
 # vai mudar tudo ...
 if __name__ == "__main__":
-    file_path = 'dados\Indicadores_MAC.csv'
+    file_path = 'Indicadores_MAC.csv'
 
     table = loadData(file_path)
     if table:
@@ -225,6 +225,7 @@ if __name__ == "__main__":
         df = getProdData_2(table, ['Ambulatorial', 'Hospitalar'])
         print(df)
         print('-- foi --')
+
 
 
 
